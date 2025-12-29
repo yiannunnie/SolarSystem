@@ -1,4 +1,3 @@
-
 interface ButtonProps {
   title?: string;
   id?: string;
@@ -8,7 +7,7 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-export const Button: React.FC<ButtonProps> = ({ title, id, rightIcon, leftIcon, containerClass, onClick }) => {
+export const Button = ({ title, id, rightIcon, leftIcon, containerClass, onClick }: ButtonProps) => {
   return (
     <button
       id={id}

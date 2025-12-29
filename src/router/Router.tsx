@@ -1,18 +1,23 @@
 import { createBrowserRouter } from "react-router-dom";
-// import { Source } from "../Source";
 import { Home, Planetas } from "../pages";
+import { Layout } from "../layout/Layout";
 
 export const router = createBrowserRouter([
-    {
-    path: "/",
-    element: <Home />
-  },
   {
-    path: "/planetas",
-    element: <Planetas />,
-  },
-  {
-    path: "/planetas/:planet",
-    element: <Planetas />,
-  },
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "/planetas",
+        element: <Planetas />,
+      },
+      {
+        path: "/planetas/:planet",
+        element: <Planetas />,
+      },
+    ]
+  }
 ]);
