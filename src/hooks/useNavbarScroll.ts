@@ -2,10 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { useWindowScroll } from "react-use";
 import { gsap } from "gsap";
 
-/**
- * Hook para manejar la visibilidad del navbar con scroll
- * Oculta el navbar al hacer scroll hacia abajo y lo muestra al hacer scroll hacia arriba
- */
 export const useNavbarScroll = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
@@ -32,6 +28,8 @@ export const useNavbarScroll = () => {
     gsap.to(navRef.current, {
       y: isVisible ? 0 : -100,
       opacity: isVisible ? 1 : 0,
+      duration: 0.2,
+      ease: "power1.out",
     });
   }, [isVisible]);
 

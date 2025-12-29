@@ -79,7 +79,7 @@ body {
   }
 
   .floating-nav {
-    @apply bg-black rounded-lg border;
+    @apply bg-black rounded-lg border mx-2 md:mx-0;
   }
 
   .absolute-center {
