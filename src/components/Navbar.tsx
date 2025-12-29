@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useWindowScroll } from "react-use";
 import { gsap } from "gsap";
 
-const NavItems = [ "About", "Planets", "Sun", "Contact"];
+const NavItems = [ "About", "Planets", "Sun", ];
 
 export const Navbar = () => {
   const [isAudioPlaying, setIsAudioPlaying] = useState<boolean>(false);
