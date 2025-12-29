@@ -3,9 +3,13 @@ import { PlanetSection } from "./PlanetSection";
 
 interface PlanetContentProps {
   planetInfo: PlanetInfo;
+  nextPlanet: () => void;
+  prevPlanet: () => void;
+  nextPlanetName: string;
+  previousPlanetName: string;
 }
 
-export const PlanetContent = ({ planetInfo }: PlanetContentProps) => {
+export const PlanetContent = ({ planetInfo, nextPlanet, prevPlanet, nextPlanetName, previousPlanetName }: PlanetContentProps) => {
   const {
     name,
     description,
@@ -23,10 +27,25 @@ export const PlanetContent = ({ planetInfo }: PlanetContentProps) => {
 
   return (
     <div className="md:w-1/2 md:flex md:flex-col md:justify-start space-y-4 md:order-2">
-      <h1 className="text-2xl font-bold uppercase md:hidden">{name}</h1>
-      <h1 className="hidden md:block font-bold md:text-4xl md:pb-5 uppercase">
-        {name}
-      </h1>
+      <div className="flex items-baseline justify-between md:pb-5">
+        <h1 className="text-2xl md:text-4xl font-bold uppercase">
+          {name}
+        </h1>
+        <div className="flex justify-end item-end gap-4">
+          <button
+          onClick={prevPlanet}
+          className="text-xs text-stone-500 md:text-sm cursor-pointer hover:underline uppercase"
+        >
+          ← {previousPlanetName} 
+        </button>
+        <button
+          onClick={nextPlanet}
+          className="text-xs text-stone-500 md:text-sm cursor-pointer hover:underline uppercase"
+        >
+          {nextPlanetName} → 
+        </button>
+  </div>
+</div>
 
       <div className="circularfont md:h-[120vh] md:overflow-y-auto no-scrollbar pt-10 md:pt-0">
         <p className="pspace">{description}</p>

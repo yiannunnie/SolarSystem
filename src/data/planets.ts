@@ -17,6 +17,17 @@ export interface PlanetInfo {
   imgdes3: string;
 }
 
+export const PLANET_ORDER = [
+  "mercury",
+  "venus",
+  "earth",
+  "mars",
+  "jupiter",
+  "saturn",
+  "uranus",
+  "neptune",
+];
+
 export type PlanetDataType = {
   [key: string]: PlanetInfo;
 };
