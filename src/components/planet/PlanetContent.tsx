@@ -1,5 +1,5 @@
 import type { PlanetInfo } from "../../data/planets";
-import { PlanetSection } from "./PlanetSection";
+import { ContentStyle } from "../contentStyle/ContentStyle";
 
 interface PlanetContentProps {
   planetInfo: PlanetInfo;
@@ -47,7 +47,7 @@ export const PlanetContent = ({ planetInfo, nextPlanet, prevPlanet, nextPlanetNa
   </div>
 </div>
 
-      <div className="circularfont md:h-[120vh] md:overflow-y-auto no-scrollbar pt-10 md:pt-0">
+      <div className="circularfont min-h-screen md:h-[120vh] md:overflow-y-auto no-scrollbar pt-10 md:pt-0">
         <p className="pspace">{description}</p>
         {description2.map((p, i) => (
           <p className="pspace" key={i}>
@@ -55,15 +55,15 @@ export const PlanetContent = ({ planetInfo, nextPlanet, prevPlanet, nextPlanetNa
           </p>
         ))}
 
-        <PlanetSection title="Nameshake" content={nameshake} />
-        <PlanetSection title="Potential for Scientific Discovery" content={potential} />
-        <PlanetSection title="Size" content={size} />
-        <PlanetSection title="Orbit and Rotation" content={orbital} />
-        <PlanetSection title="Moons" content={moons} />
-        <PlanetSection title="Structure" content={structure} />
-        <PlanetSection title="Surface" content={surface} />
-        <PlanetSection title="Atmosphere" content={atmosphere} />
-        <PlanetSection title="Magnetic Field" content={magnethosphere} />
+        <ContentStyle title="Nameshake" content={nameshake} />
+        <ContentStyle title="Potential for Scientific Discovery" content={potential} />
+        <ContentStyle title="Size" content={size} />
+        <ContentStyle title="Orbit and Rotation" content={orbital} />
+        <ContentStyle title="Moons" content={moons} />
+        <ContentStyle title="Structure" content={structure} />
+        <ContentStyle title="Surface" content={surface} />
+        <ContentStyle title="Atmosphere" content={atmosphere} />
+        <ContentStyle title="Magnetic Field" content={magnethosphere} />
       </div>
     </div>
   );

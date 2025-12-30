@@ -1,9 +1,9 @@
-interface PlanetSectionProps {
+interface ContentStyleProps {
   title: string;
   content: string | string[];
 }
 
-export const PlanetSection = ({ title, content }: PlanetSectionProps) => {
+export const ContentStyle = ({ title, content }: ContentStyleProps) => {
   const contentArray = Array.isArray(content) ? content : [content];
 
   return (

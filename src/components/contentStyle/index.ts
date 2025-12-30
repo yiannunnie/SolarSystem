@@ -1,0 +1,1 @@
+export { ContentStyle } from './ContentStyle';

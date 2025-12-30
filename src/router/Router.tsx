@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home, Planetas } from "../pages";
+import { Home, Planetas, Sol } from "../pages";
 import { Layout } from "../layout/Layout";
 
 export const router = createBrowserRouter([
@@ -17,6 +17,10 @@ export const router = createBrowserRouter([
       {
         path: "/planetas/:planet",
         element: <Planetas />,
+      },
+      {
+        path: "/sol",
+        element: <Sol />,
       },
     ]
   }

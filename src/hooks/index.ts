@@ -5,3 +5,4 @@ export { use3DTilt } from "./use3DTilt";
 export { useImageTilt } from "./useImageTilt";
 export { useVideoLoader } from "./useVideoLoader";
 export { useLockBodyScroll } from "./useLockBodyScroll";
+export { usePageNavigation } from "./usePageNavigation";

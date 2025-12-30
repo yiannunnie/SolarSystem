@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+
 import { useState } from "react";
-import { useAudioPlayer, useNavbarScroll, useSectionNavigation, useLockBodyScroll } from "../../hooks";
+import { useAudioPlayer, useNavbarScroll, useSectionNavigation, useLockBodyScroll, usePageNavigation } from "../../hooks";
 import { AudioIndicator } from "./AudioIndicator";
 
 const NAV_ITEMS = ["About", "Planets", "Sun"];
@@ -9,6 +9,7 @@ export const Navbar = () => {
   const { navRef } = useNavbarScroll();
   const { audioRef, isPlaying, isActive, toggle } = useAudioPlayer();
   const { navigateToSection } = useSectionNavigation();
+  const { goHome } = usePageNavigation();
 
   const [menuMini, setMenuMini] = useState(false);
 
@@ -28,12 +29,12 @@ export const Navbar = () => {
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
           <div className="flex items-center gap-7 w-full justify-between">
-            <Link
-              to="/"
-              className="text-white zentry text-lg font-semibold tracking-wider hover:opacity-80 transition"
+            <button
+              onClick={goHome}
+              className="text-white zentry text-lg font-semibold tracking-wider hover:opacity-80 transition cursor-pointer"
             >
               YIYI'S SPACE
-            </Link>
+            </button>
 
             <div className="flex h-full items-center gap-8">
               <div className="hidden md:block">

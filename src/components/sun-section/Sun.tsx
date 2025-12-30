@@ -1,8 +1,10 @@
 import { AnimTitle } from "../ui";
 import { Button } from "../ui";
 import { useImageTilt } from "../../hooks";
+import { usePageNavigation } from "../../hooks/usePageNavigation";
 
 export const Sun = () => {
+  const { goSun } = usePageNavigation();
   const { imageRef, handleMouseMove, handleMouseLeave } = useImageTilt();
 
   return (
@@ -45,8 +47,8 @@ export const Sun = () => {
             <Button
               title="Learn more"
               id="sun-btn"
-              containerClass="mt-8 md:mt-5 flex-center gap-1 font-semibold hover:bg-white hover:text-black hover:border-0 !font-regular"
-              onClick={() => {}}
+              containerClass="mt-8 md:mt-5 flex-center gap-1 font-semibold hover:bg-white hover:text-black hover:border-black !font-regular"
+              onClick={goSun}
             />
           </div>
         </div>
