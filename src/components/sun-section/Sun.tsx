@@ -8,7 +8,7 @@ export const Sun = () => {
   const { imageRef, handleMouseMove, handleMouseLeave } = useImageTilt();
 
   return (
-    <section id="sun" className="min-h-dvh w-screen bg-black text-white">
+    <section id="sun" className="min-h-dvh w-screen bg-black text-white pb-30">
       <div className="flex size-full flex-col items-center pb-24">
         <p className="general text-sm uppercase md:text-[20px] mt-5">
           The heart of our solar system

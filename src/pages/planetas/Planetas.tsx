@@ -1,6 +1,7 @@
 import { Navigate, useParams, useNavigate } from "react-router-dom";
 import { PLANET_DATA, PLANET_ORDER } from "../../data/planets";
 import { PlanetContent, PlanetGallery } from "../../components/planet";
+import { Footer } from "../../components/footer";
 
 export const Planetas = () => {
   const { planet } = useParams<{ planet: string }>();
@@ -27,7 +28,8 @@ const prevPlanet =
 const prevPlanetName = PLANET_DATA[prevPlanet].name;
 
   return (
-    <section className="min-h-screen bg-black text-white pt-20">
+    <>
+    <section className="min-h-screen bg-black text-white pt-20 pb-30">
       <div className="container mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row md:gap-12">
           <PlanetContent planetInfo={planetInfo}
@@ -45,5 +47,7 @@ const prevPlanetName = PLANET_DATA[prevPlanet].name;
         </div>
       </div>
     </section>
+    <Footer/>
+    </>
   );
 }
