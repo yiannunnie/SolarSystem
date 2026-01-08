@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
-/**
- * Hook para manejar la carga de videos
- * Rastrea cuántos videos se han cargado del total esperado
+/** Recoerdatorio;
+ * para manejar la carga de videos
+ * Rastrea ,por así decirlo, cuántos videos se han cargado del total esperado
  */
 export const useVideoLoader = (totalVideos: number) => {
   const [loadedVideos, setLoadedVideos] = useState(0);

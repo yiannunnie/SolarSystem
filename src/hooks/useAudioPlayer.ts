@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
-/**
- * Hook para manejar el reproductor de audio
- * Gestiona la reproducción automática después del primer click y el estado del audio
+/** Recordatorio:
+ * para el reproductor de audio
+ * para la reproducción automática después del primer click y el estado del audio
  * 
- * @param audioSrc - (Opcional) URL del archivo de audio. Si se proporciona, se puede usar directamente en el elemento <audio>
+ * @param audioSrc - (otro uso) URL del archivo de audio. Si hay, se puede usar directamente en el <audio>
  */
 export const useAudioPlayer = (audioSrc?: string) => {
   const [isPlaying, setIsPlaying] = useState(false);

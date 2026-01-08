@@ -16,12 +16,6 @@ body {
   background-color: '#dfdff0';
 }
 
-:root {
-	--color-text: #000;
-	--color-text-alt: #fff;
-	--color-blue: #0063e5;
-}
-
 @font-face {
   font-family: "general";
   src: url("/fonts/general.woff2") format("woff2");
@@ -50,13 +44,6 @@ body {
   font-weight: 700;
 }
 
-.playfair{
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
 .no-scrollbar::-webkit-scrollbar {
   display: none; 
 }
@@ -65,7 +52,6 @@ body {
   -ms-overflow-style: none; 
   scrollbar-width: none;
 }
-
 
 
 @layer utilities {
@@ -99,7 +85,7 @@ body {
   }
 
   .about-subtext {
-    @apply absolute bottom-[-75dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center md:text-lg md:max-w-136;
+    @apply absolute bottom-[-75dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center md:max-w-136;
   }
 
   .about-image {
@@ -180,6 +166,10 @@ body {
     transform: translateY(-0px);
   }
 }
+
+
+
+
 
 /* From Uiverse.io by G4b413l */
 /* https://uiverse.io/G4b413l/tidy-walrus-92 */

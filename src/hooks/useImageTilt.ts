@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import { gsap } from "gsap";
 
-/**
- * Hook para manejar el efecto 3D de inclinación en imágenes
- * Similar a use3DTilt pero con perspectiva más fuerte para imágenes individuales
+/** Recordatorio:
+ * para manejar el efecto 3D de inclinación en imágenes
+ * Similar pero con perspectiva más fuerte para imágenes individuales
  */
 export const useImageTilt = () => {
   const imageRef = useRef<HTMLImageElement | null>(null);

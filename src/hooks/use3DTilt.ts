@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
-/**
- * Hook para manejar el efecto 3D de inclinación en tarjetas
+/**   Recordatorio:
+ * para manejar el efecto 3D de inclinación en tarjetas
  * Proporciona la lógica de transformación 3D basada en la posición del mouse
  */
 export const use3DTilt = () => {
