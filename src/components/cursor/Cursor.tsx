@@ -33,7 +33,7 @@ export const Cursor = () => {
 
         window.addEventListener("mousemove", handleMouseMove);
 
-        document.querySelectorAll("a, button").forEach((el) => {
+        document.querySelectorAll("a, button,").forEach((el) => {
             el.addEventListener("mouseenter", growCursor);
             el.addEventListener("mouseleave", shrinkCursor);
         });

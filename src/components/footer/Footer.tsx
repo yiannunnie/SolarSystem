@@ -88,6 +88,8 @@ export const Footer = () => {
               rel="noopener noreferrer"
               aria-label={link.label}
               className="text-white hover:opacity-70 transition duration-300"
+              onMouseEnter={() => gsap.to("#custom-cursor", { scale: 2, duration: 0.3 })}
+              onMouseLeave={() => gsap.to("#custom-cursor", { scale: 1, duration: 0.3 })}
             >
               {link.icon}
             </a>

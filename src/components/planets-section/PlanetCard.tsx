@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { use3DTilt } from "../../hooks";
+import { gsap } from "gsap";
 
 interface PlanetCardProps {
   to: string;
@@ -24,7 +25,9 @@ export const PlanetCard = ({ to, videoSrc, title, description, className = "" }:
       onMouseLeave={handleMouseLeave}
       style={{ transform }}
     >
-      <div className="relative size-full">
+      <div className="relative size-full" 
+        onMouseEnter={() => gsap.to("#custom-cursor", { scale: 2, duration: 0.2, ease: "power2.inOut" })}
+        onMouseLeave={() => gsap.to("#custom-cursor", { scale: 1, duration: 0 })}>
         <video
           src={videoSrc}
           loop

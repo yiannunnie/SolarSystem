@@ -91,6 +91,8 @@ export const Hero = () => {
         <div className="mask-clip-path absolute-center absolute z-50 size-64 overflow-hidden rounded-lg">
           <div
             onClick={miniVidClick}
+            onMouseEnter={() => gsap.to("#custom-cursor", { scale: 2, duration: 0.2, ease: "power2.inOut" })}
+            onMouseLeave={() => gsap.to("#custom-cursor", { scale: 1, duration: 0 })}
             className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100"
           >
             <video
