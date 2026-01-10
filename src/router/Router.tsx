@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home, Planetas, Sol } from "../pages";
+import { Home, Planetas, Sol, Curiosities } from "../pages";
 import { Layout } from "../layout/Layout";
 
 export const router = createBrowserRouter([
@@ -21,6 +21,10 @@ export const router = createBrowserRouter([
       {
         path: "/sol",
         element: <Sol />,
+      },
+      {
+        path: "/curiosities",
+        element: <Curiosities />,
       },
     ]
   }

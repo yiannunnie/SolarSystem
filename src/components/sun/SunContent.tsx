@@ -24,7 +24,7 @@ export const SunContent = ( {sunInfo}: SunContentProps) => {
       <div className="circularfont md:h-auto pt-10 md:pt-0">
         <p className="pspace">{description}</p>
 
-        <ContentStyle title="Description" content={description} />
+      <ContentStyle title="Description" content={description} />
       <ContentStyle title="Lifecycle" content={lifecycle} />
       <ContentStyle title="Orbit" content={orbit} />
       <ContentStyle title="Structure" content={structure} />

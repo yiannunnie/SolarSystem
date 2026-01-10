@@ -140,6 +140,16 @@ body {
     @apply absolute w-full md:h-dvh h-[60dvh] opacity-100 md:left-0 md:top-10 lg:left-[-300px] lg:top-[-100px];
     transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1);
   }
+  .fade-img{
+    -webkit-mask-image:
+      linear-gradient(to top, transparent, black 55%, black 55%, transparent),
+      linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    -webkit-mask-composite: intersect;
+    mask-image:
+      linear-gradient(to top, transparent, black 55%, black 55%, transparent),
+      linear-gradient(to right, transparent, black 40%, black 50%, transparent);
+    mask-composite: intersect;
+  }
 }
 
 

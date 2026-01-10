@@ -6,3 +6,4 @@ export { useImageTilt } from "./useImageTilt";
 export { useVideoLoader } from "./useVideoLoader";
 export { useLockBodyScroll } from "./useLockBodyScroll";
 export { usePageNavigation } from "./usePageNavigation";
+export { useScrollRestoration } from "./useScrollRestoration";

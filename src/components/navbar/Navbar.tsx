@@ -3,18 +3,27 @@ import { useState } from "react";
 import { useAudioPlayer, useNavbarScroll, useSectionNavigation, useLockBodyScroll, usePageNavigation } from "../../hooks";
 import { AudioIndicator } from "./AudioIndicator";
 
-const NAV_ITEMS = ["About", "Planets", "Sun"];
+const NAV_ITEMS = [
+  { label: "About", type: "section", action: "about" },
+  { label: "Planets", type: "section", action: "planets" },
+  { label: "Sun", type: "section", action: "sun" },
+  { label: "Curiosities", type: "page", action: "curiosities" },
+];
 
 export const Navbar = () => {
   const { navRef } = useNavbarScroll();
   const { audioRef, isPlaying, isActive, toggle } = useAudioPlayer();
   const { navigateToSection } = useSectionNavigation();
-  const { goHome } = usePageNavigation();
+  const { goHome, goCuriosities } = usePageNavigation();
 
   const [menuMini, setMenuMini] = useState(false);
 
-  const toggleMenu = (section:string) => {
-    navigateToSection(section.toLowerCase());
+  const toggleMenu = (item: any) => {
+    if (item.type === "section") {
+      navigateToSection(item.action);
+    } else if (item.type === "page") {
+      goCuriosities();
+    }
     setMenuMini(false);
   }
 
@@ -41,10 +50,10 @@ export const Navbar = () => {
                 {NAV_ITEMS.map((item, index) => (
                   <button
                     key={index}
-                    onClick={() => navigateToSection(item.toLowerCase())}
+                    onClick={() => toggleMenu(item)}
                     className="nav-hover-btn"
                   >
-                    {item}
+                    {item.label}
                   </button>
                 ))}
               </div>
@@ -88,7 +97,7 @@ export const Navbar = () => {
               onClick={() => toggleMenu(item)}
               className="nav-hover-btn ms-0!"
             >
-              {item}
+              {item.label}
             </button>
           ))}
         </div>

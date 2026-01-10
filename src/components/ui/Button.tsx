@@ -11,7 +11,7 @@ export const Button = ({ title, id, rightIcon, leftIcon, containerClass, onClick
   return (
     <button
       id={id}
-      className={`group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full px-4 py-2 md:px-5 md:py-3 text-white bg-black border ${containerClass ?? ""}`}
+      className={`group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full px-4 py-2 md:px-5 md:py-3 text-white border ${containerClass ?? ""}`}
       onClick={onClick}
     >
       {leftIcon}

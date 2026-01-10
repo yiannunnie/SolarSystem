@@ -8,5 +8,6 @@ export const usePageNavigation = () => {
     goHome: () => navigate("/"),
     goBack: () => navigate(-1),
     goSun: () => navigate("/sol"),
+    goCuriosities: () => navigate("/curiosities"),
   };
 };
