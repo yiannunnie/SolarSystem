@@ -34,13 +34,13 @@ export const PlanetContent = ({ planetInfo, nextPlanet, prevPlanet, nextPlanetNa
         <div className="flex justify-end item-end gap-4">
           <button
           onClick={prevPlanet}
-          className="text-xs text-gray-500 md:text-sm cursor-pointer hover:underline uppercase"
+          className="text-xs text-gray-500 md:text-sm hover:underline uppercase"
         >
           ← {previousPlanetName} 
         </button>
         <button
           onClick={nextPlanet}
-          className="text-xs text-gray-500 md:text-sm cursor-pointer hover:underline uppercase"
+          className="text-xs text-gray-500 md:text-sm hover:underline uppercase"
         >
           {nextPlanetName} → 
         </button>

@@ -28,7 +28,7 @@ export const About = () => {
   });
 
   return (
-    <div id="about" className="min-h-screen w-screen ">
+    <div id="about" className="min-h-screen w-screen bg-white">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <h2 className="general text-sm uppercase md:text-[20px]">
           Solar system

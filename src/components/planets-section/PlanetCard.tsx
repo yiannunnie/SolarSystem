@@ -24,7 +24,7 @@ export const PlanetCard = ({ to, videoSrc, title, description, className = "" }:
       onMouseLeave={handleMouseLeave}
       style={{ transform }}
     >
-      <div className="relative size-full cursor-pointer">
+      <div className="relative size-full">
         <video
           src={videoSrc}
           loop

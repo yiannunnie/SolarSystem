@@ -40,7 +40,7 @@ export const Navbar = () => {
           <div className="flex items-center gap-7 w-full justify-between">
             <button
               onClick={goHome}
-              className="text-white zentry text-lg font-semibold tracking-wider hover:opacity-80 transition cursor-pointer"
+              className="text-white zentry text-lg font-semibold tracking-wider hover:opacity-80 transition"
             >
               YIYI'S SPACE
             </button>
@@ -59,7 +59,7 @@ export const Navbar = () => {
               </div>
               
               <button
-                className="group relative ml-10 flex items-center space-x-0.5 cursor-pointer"
+                className="group relative ml-10 flex items-center space-x-0.5 "
                 onClick={toggle}
               >
                 <audio

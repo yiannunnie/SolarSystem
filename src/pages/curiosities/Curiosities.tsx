@@ -66,7 +66,7 @@ useGSAP(() => {
         <div className="hidden md:flex items-center justify-between w-full px-2 md:px-0 absolute top-1/2 -translate-y-1/2 z-10 circularfont text-sm">
           <button
             onClick={prev}
-            className="flex items-center space-x-2 text-white hover:text-gray-400 transition-colors cursor-pointer"
+            className="flex items-center space-x-2 text-white hover:text-gray-400 transition-colors"
           >
             <MdArrowBackIos className="h-6 w-6" />
             <span className="hidden md:block font-medium">{prevItem.title}</span>
@@ -74,7 +74,7 @@ useGSAP(() => {
 
           <button
             onClick={next}
-            className="flex items-center space-x-2 text-white hover:text-gray-400 transition-colors cursor-pointer"
+            className="flex items-center space-x-2 text-white hover:text-gray-400 transition-colors"
           >
             <span className="hidden md:block font-medium">{nextItem.title}</span>
             <MdArrowForwardIos className="h-6 w-6" />
