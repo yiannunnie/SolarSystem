@@ -67,6 +67,8 @@ useGSAP(() => {
           <button
             onClick={prev}
             className="flex items-center space-x-2 text-white hover:text-gray-400 transition-colors"
+            onMouseEnter={() => gsap.to("#custom-cursor", { scale: 1, duration: 0.2, ease: "power2.inOut" })}
+            onMouseLeave={() => gsap.to("#custom-cursor", { scale: 2, duration: 0 })}
           >
             <MdArrowBackIos className="h-6 w-6" />
             <span className="hidden md:block font-medium">{prevItem.title}</span>
@@ -75,6 +77,8 @@ useGSAP(() => {
           <button
             onClick={next}
             className="flex items-center space-x-2 text-white hover:text-gray-400 transition-colors"
+            onMouseEnter={() => gsap.to("#custom-cursor", { scale: 1, duration: 0.2, ease: "power2.inOut" })}
+            onMouseLeave={() => gsap.to("#custom-cursor", { scale: 2, duration: 0 })}
           >
             <span className="hidden md:block font-medium">{nextItem.title}</span>
             <MdArrowForwardIos className="h-6 w-6" />

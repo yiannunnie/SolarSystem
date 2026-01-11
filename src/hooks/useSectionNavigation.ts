@@ -1,9 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
 
-/** Recordatorio:
- * para manejar la navegación a secciones específicas
- * Si no estoy en home, navega primero a home y luego hace scroll a la sección
- */
 export const useSectionNavigation = () => {
   const navigate = useNavigate();
   const location = useLocation();

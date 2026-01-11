@@ -2,7 +2,7 @@ interface PlanetCardData {
   id: string;
   title: string;
   description: string;
-  videoSrc: string;
+  videoSrc: string; 
   className: string;
 }
 
@@ -34,7 +34,7 @@ export const PLANETS_LAYOUT: PlanetLayoutGroup[] = [
         id: "mercury",
         title: "Mercury",
         description: "Mercury is the planet nearest to the Sun, and the smallest planet in our solar system.",
-        videoSrc: "videos/mercury.mp4",
+        videoSrc: "img/mercury-planet.gif",
         className: "border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]"
       }
     ]
@@ -46,14 +46,14 @@ export const PLANETS_LAYOUT: PlanetLayoutGroup[] = [
         id: "venus",
         title: "Venus",
         description: "Venus is the second planet from the Sun, and the sixth largest planet.",
-        videoSrc: "videos/venus.mp4",
-        className: "card-tilt_1 h-[60vh] border-hsla row-span-1 md:col-span-1 md:row-span-2 ms-32 md:ms-0"
+        videoSrc: "img/venus.gif",
+        className: "card-tilt_1 h-[40vh] md:h-[60vh] border-hsla row-span-1 md:col-span-1 md:row-span-2 ms-32 md:ms-0"
       },
       {
         id: "mars",
         title: "Mars",
         description: "Mars is the fourth planet from the Sun, and the seventh largest planet.",
-        videoSrc: "videos/mars.mp4",
+        videoSrc: "img/mars.gif",
         className: "card-tilt_1 border-hsla row-span-1 md:col-span-1 md:row-span-2 me-30 md:me-0"
       }
     ]
@@ -64,7 +64,7 @@ export const PLANETS_LAYOUT: PlanetLayoutGroup[] = [
         id: "earth",
         title: "Earth",
         description: "Earth our home planet is the third planet from the Sun, and the fifth largest planet.",
-        videoSrc: "videos/earth.mp4",
+        videoSrc: "img/earth.gif",
         className: "border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]"
       }
     ]
@@ -76,28 +76,28 @@ export const PLANETS_LAYOUT: PlanetLayoutGroup[] = [
         id: "jupiter",
         title: "Jupiter",
         description: "Jupiter is the fifth planet from the Sun, and the largest planet in our solar system.",
-        videoSrc: "videos/jupiter.mp4",
+        videoSrc: "img/jupiter00.gif",
         className: "card-tilt_1 border-hsla row-span-1 ms-32 md:ms-0 h-[40vh] md:h-[65vh]"
       },
       {
         id: "saturn",
         title: "Saturn",
         description: "Saturn is the sixth planet from the Sun, and the second largest planet in our solar system.",
-        videoSrc: "videos/saturn.mp4",
+        videoSrc: "img/saturn.gif",
         className: "card-tilt_1 border-hsla me-30 md:me-0"
       },
       {
         id: "uranus",
         title: "Uranus",
         description: "Uranus is the seventh planet from the Sun, and the third largest planet in our solar system.",
-        videoSrc: "videos/uranus.mp4",
+        videoSrc: "img/uranus.gif",
         className: "card-tilt_1 border-hsla"
       },
       {
         id: "neptune",
         title: "Neptune",
         description: "Neptune is the eighth and most distant planet in our solar system. It's the fourth largest planet.",
-        videoSrc: "videos/neptune.mp4",
+        videoSrc: "img/neptune.gif",
         className: "card-tilt_1 border-hsla h-[30vh] md:h-auto"
       }
     ]

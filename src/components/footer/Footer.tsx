@@ -66,8 +66,8 @@ export const Footer = () => {
 
       <div className=" h-72 pb-25 md:h-[60vh] flex items-center justify-center">
         <h2
-        onMouseEnter={() => gsap.to("#custom-cursor", { scale: 8, duration: 0.3 })}
-        onMouseLeave={() => gsap.to("#custom-cursor", { scale: 1, duration: 0.3 })}
+        onMouseEnter={() => gsap.to("#custom-cursor", { scale: 9, duration: 0.3 })}
+        onMouseLeave={() => gsap.to("#custom-cursor", { scale: 2, duration: 0.3 })}
         className="text-[15vw] font-bold uppercase select-none circularfont opacity-90">
           Yiyi&apos;s Space
         </h2>
@@ -88,8 +88,6 @@ export const Footer = () => {
               rel="noopener noreferrer"
               aria-label={link.label}
               className="text-white hover:opacity-70 transition duration-300"
-              onMouseEnter={() => gsap.to("#custom-cursor", { scale: 2, duration: 0.3 })}
-              onMouseLeave={() => gsap.to("#custom-cursor", { scale: 1, duration: 0.3 })}
             >
               {link.icon}
             </a>

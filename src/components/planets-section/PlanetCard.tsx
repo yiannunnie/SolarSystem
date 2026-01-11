@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { use3DTilt } from "../../hooks";
-import { gsap } from "gsap";
 
 interface PlanetCardProps {
   to: string;
@@ -13,7 +12,6 @@ interface PlanetCardProps {
 export const PlanetCard = ({ to, videoSrc, title, description, className = "" }: PlanetCardProps) => {
   const navigate = useNavigate();
   const { itemRef, transform, handleMouseMove, handleMouseLeave } = use3DTilt();
-
   const handleClick = () => navigate(to);
 
   return (
@@ -25,15 +23,15 @@ export const PlanetCard = ({ to, videoSrc, title, description, className = "" }:
       onMouseLeave={handleMouseLeave}
       style={{ transform }}
     >
-      <div className="relative size-full" 
-        onMouseEnter={() => gsap.to("#custom-cursor", { scale: 2, duration: 0.2, ease: "power2.inOut" })}
-        onMouseLeave={() => gsap.to("#custom-cursor", { scale: 1, duration: 0 })}>
-        <video
+      <div className="relative size-full cursor-grow">
+        <img
           src={videoSrc}
-          loop
-          muted
-          autoPlay
-          className="absolute left-0 top-0 size-full object-cover object-center"
+          className={`
+    absolute left-1/2 top-1/2
+    object-contain
+    -translate-x-1/2 -translate-y-1/2
+    ${title === "Mercury" ? "w-24 md:w-40" : title === "Jupiter" ? "w-64 md:w-[95vh]" : "w-48 md:w-80"}
+    `}
         />
         <div className="relative z-10 flex size-full flex-col justify-between p-5 text-white">
           <div>

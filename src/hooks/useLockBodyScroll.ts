@@ -1,8 +1,5 @@
 import { useEffect } from "react";
 
-/**
- * Hook para bloquear el scroll del body
- */
 export const useLockBodyScroll = (locked: boolean) => {
   useEffect(() => {
     if (locked) {

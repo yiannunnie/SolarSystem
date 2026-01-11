@@ -34,13 +34,13 @@ export const PlanetContent = ({ planetInfo, nextPlanet, prevPlanet, nextPlanetNa
         <div className="flex justify-end item-end gap-4">
           <button
           onClick={prevPlanet}
-          className="text-xs text-gray-500 md:text-sm hover:underline uppercase"
+          className="text-xs text-gray-500 md:text-sm hover:underline uppercase cursor-grow"
         >
           ← {previousPlanetName} 
         </button>
         <button
           onClick={nextPlanet}
-          className="text-xs text-gray-500 md:text-sm hover:underline uppercase"
+          className="text-xs text-gray-500 md:text-sm hover:underline uppercase cursor-grow"
         >
           {nextPlanetName} → 
         </button>
@@ -57,7 +57,7 @@ export const PlanetContent = ({ planetInfo, nextPlanet, prevPlanet, nextPlanetNa
 
         <ContentStyle title="Nameshake" content={nameshake} />
         <ContentStyle title="Potential for Scientific Discovery" content={potential} />
-        <ContentStyle title="Size" content={size} />
+        <ContentStyle title="Size and Distance" content={size} />
         <ContentStyle title="Orbit and Rotation" content={orbital} />
         <ContentStyle title="Moons" content={moons} />
         <ContentStyle title="Structure" content={structure} />

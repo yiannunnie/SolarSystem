@@ -2,9 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { useWindowScroll } from "react-use";
 import { gsap } from "gsap";
 
-/** Recordatorio:
- * para manejar el scroll del navbar con gsap y tal
- */
 
 export const useNavbarScroll = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
