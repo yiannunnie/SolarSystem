@@ -1,6 +1,7 @@
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
 import { gsap } from "gsap";
+import { usePageNavigation } from "../../hooks";
 
 const links = [
   {
@@ -21,6 +22,8 @@ const links = [
 ];
 
 export const Footer = () => {
+  const { goCuriosities } = usePageNavigation();
+
   return (
     <footer className="relative bg-black text-white overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-px bg-gray-700/60"/>
@@ -42,7 +45,7 @@ export const Footer = () => {
               <li><a href="#about" className="hover:underline">About</a></li>
               <li><a href="#planets" className="hover:underline">Planets</a></li>
               <li><a href="#sun" className="hover:underline">Sun</a></li>
-              <li><a href="#curiosities" className="hover:underline">Curiosities</a></li>
+              <li onClick={ goCuriosities}  className="hover:underline cursor-grow">Curiosities</li>
             </ul>
           </div>
 

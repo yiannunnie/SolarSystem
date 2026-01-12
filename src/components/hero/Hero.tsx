@@ -135,7 +135,7 @@ export const Hero = () => {
         ) : (
 
           <img
-            src= "img/bigbang.webp"
+            src= "img/nasa.webp"
             className="absolute left-0 top-0 size-full object-cover object-center"
           />
         )}
