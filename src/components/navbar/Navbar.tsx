@@ -65,7 +65,7 @@ export const Navbar = () => {
                 <audio
                   ref={audioRef}
                   className="hidden"
-                  src="/audio/interstellar.mp3"
+                  src="/audio/space.mp3"
                   loop
                 />
                 <AudioIndicator isActive={isActive} />
