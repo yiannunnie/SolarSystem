@@ -38,9 +38,12 @@ It is not actively maintained and was built mainly for educational purposes.
 Contributions are not expected, but feedback and suggestions are always welcome.  
 If you have an idea or notice something that could be improved, feel free to open an issue with the "enhancement" tag. ⭐
 
+# Live Demo 🌠
+Web Link: [https://solarsystemyiyi.vercel.app](https://solarsystemyiyi.vercel.app)
+
+
 ---
 
 
 Hope this project boosts your creativity and knowledge to new levels! 💖
-
 
