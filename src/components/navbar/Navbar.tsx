@@ -40,9 +40,9 @@ export const Navbar = () => {
           <div className="flex items-center gap-7 w-full justify-between">
             <button
               onClick={goHome}
-              className="text-white zentry text-lg font-semibold tracking-wider hover:opacity-80 transition"
+              className="text-white roc text-lg font-semibold tracking-wider hover:opacity-80 transition"
             >
-              YIYI'S SPACE
+              SSY SPACE
             </button>
 
             <div className="flex h-full items-center gap-8">

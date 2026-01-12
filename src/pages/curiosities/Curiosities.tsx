@@ -57,7 +57,7 @@ useGSAP(() => {
       aria-labelledby="curiosity-heading"
       className="bg-black relative min-h-screen px-5 md:px-20 pb-40"
     >
-      <h2 className="text-white text-3xl md:text-5xl zentry tracking-wider font-bold -mb-20 md:mb-35 pt-30 text-center px-15 animate-title"
+      <h2 className="text-white text-3xl md:text-5xl roc tracking-wider font-bold -mb-20 md:mb-35 pt-30 text-center px-15 animate-title"
       >
         Curiosities about the Solar System
       </h2>

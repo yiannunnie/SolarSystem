@@ -141,13 +141,13 @@ export const Hero = () => {
         )}
 
         <div>
-          <h1 className="hero-heading absolute bottom-5 tracking-wide right-5 z-40 text-white zentry">
+          <h1 className="hero-heading absolute bottom-5 tracking-wide right-5 z-40 text-white roc">
             OUR SOLAR SYSTEM
           </h1>
 
           <div className="absolute left-0 top-0 z-40 size-full">
             <div className="mt-30 px-6 sm:px-10">
-              <h1 className="hero-heading text-white tracking-wide zentry pb-5">
+              <h1 className="hero-heading text-white tracking-wide roc pb-5">
                 WELCOME TO
               </h1>
 
@@ -166,7 +166,7 @@ export const Hero = () => {
         </div>
       </div>
 
-      <h1 className="hero-heading absolute bottom-5 tracking-wide right-5 text-black zentry">
+      <h1 className="hero-heading absolute bottom-5 tracking-wide right-5 text-black roc">
         OUR SOLAR SYSTEM
       </h1>
     </div>

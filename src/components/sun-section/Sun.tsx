@@ -13,7 +13,7 @@ export const Sun = () => {
         <p className="general text-sm uppercase md:text-[20px] mt-5">
           The heart of our solar system
         </p>
-        <div className="relative size-full zentry">
+        <div className="relative size-full roc">
           <AnimTitle
             title="The Sun"
             containerClass="mt-5 pointer-events-none relative z-10 "

@@ -36,7 +36,7 @@ export const About = () => {
 
         <AnimTitle
           title="Explore the wonders <br/> of our universe"
-          containerClass="mt-5 zentry !text-black text-center"
+          containerClass="mt-5 roc !text-black text-center"
         />
 
         <div className="container mx-auto px-10 md:px-10 max-w-2xl text-center py-10">

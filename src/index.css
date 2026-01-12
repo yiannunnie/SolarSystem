@@ -36,8 +36,8 @@ button {
 }
 
 @font-face {
-  font-family: "zentry";
-  src: url("/fonts/zentry-regular.woff2") format("woff2");
+  font-family: "roc";
+  src: url("/fonts/roc-regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -49,8 +49,8 @@ button {
   font-family: "Roboto Flex", sans-serif;
 }
 
-.zentry{
-  font-family: "zentry", "sans-serif";
+.roc{
+  font-family: "roc", "sans-serif";
 }
 
 .general{

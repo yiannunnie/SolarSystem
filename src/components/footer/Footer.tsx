@@ -30,8 +30,8 @@ export const Footer = () => {
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between gap-12 pt-15 md:pt-20">
         <div>
           <div className="flex items-center space-x-2">
-            <span className="font-bold text-lg tracking-wider zentry">
-              Yiyi&apos;s Space
+            <span className="font-bold text-lg tracking-wider roc">
+              SSY Space
             </span>
             <span className="text-gray-500">|</span>
             <span className="text-gray-400">The Solar System</span>
@@ -72,14 +72,14 @@ export const Footer = () => {
         onMouseEnter={() => gsap.to("#custom-cursor", { scale: 9, duration: 0.3 })}
         onMouseLeave={() => gsap.to("#custom-cursor", { scale: 2, duration: 0.3 })}
         className="text-[15vw] font-bold uppercase select-none circularfont opacity-90">
-          Yiyi&apos;s Space
+          SSY Space
         </h2>
       </div>
 
       <div className="absolute bottom-10 w-full">
         <div className="container mx-auto px-6 flex flex-col items-center md:flex-row md:justify-between md: gap-6">
           <p className="text-sm text-gray-500 circularfont">
-          © 2026 Yiyi&apos;s Space. All rights reserved.
+          © 2026 SSY Space. All rights reserved.
         </p>
 
         <div className="flex gap-6">

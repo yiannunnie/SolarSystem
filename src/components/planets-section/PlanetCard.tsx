@@ -35,7 +35,7 @@ export const PlanetCard = ({ to, videoSrc, title, description, className = "" }:
         />
         <div className="relative z-10 flex size-full flex-col justify-between p-5 text-white">
           <div>
-            <h1 className="card-title zentry tracking-wide">{title}</h1>
+            <h1 className="card-title roc tracking-wide">{title}</h1>
             <p className="mt-3 max-w-64 text-xs md:text-base">{description}</p>
           </div>
         </div>
